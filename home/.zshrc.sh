@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-curr="$pm/dotfiles"
+curr="$dev/dotfiles"
 
 # Load main files.
 # echo "Load start\t" $(gdate "+%s-%N")
@@ -8,6 +8,7 @@ source "$curr/terminal/startup.sh"
 # echo "$curr/terminal/startup.sh"
 source "$curr/terminal/completion.sh"
 source "$curr/terminal/highlight.sh"
+source "$curr/terminal/z.sh"
 # echo "Load end\t" $(gdate "+%s-%N")
 
 autoload -U colors && colors
@@ -120,7 +121,7 @@ alias nibi='npm install && bower install'
 alias nibir='rm -rf {bower_components,node_modules} && npm install && bower install'
 alias ns='npm search'
 
-alias jk='jekyll serve --watch' # lol jk
+alias jk='jekyll serve' # lol jk
 alias serve='python -m SimpleHTTPServer'
 
 # Ruby.

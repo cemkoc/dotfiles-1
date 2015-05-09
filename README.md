@@ -4,7 +4,7 @@ Colourful & robust OS X configuration files and utilities.
 Installation is done with simple command set (see “building system from scratch” for setup of new system):
 
 ```
-curl --silent https://raw.githubusercontent.com/paulmillr/dotfiles/master/install.sh | sh
+curl --silent https://raw.githubusercontent.com/jhabdas/dotfiles/master/install.sh | sh
 ```
 
 ## Features
@@ -20,6 +20,7 @@ Shell (zsh):
 * Syntax highlighting
 * Automatic setting up of terminal tab / window title to current dir
 * `rm` moves file to the OS X trash
+* `z` to allow jumping between directories
 * A bunch of useful functions:
     * `extract archive.tar.bz` — unpack any archive (supports many extensions)
     * `ram safari` — show app RAM usage
@@ -67,6 +68,7 @@ Shell (zsh):
 The MIT license.
 
 Copyright (c) 2013 Paul Miller (http://paulmillr.com/)
+Copyright (c) 2015 Josh Habdas (http://habd.as)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
