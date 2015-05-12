@@ -74,4 +74,4 @@
 [init]
 	templatedir = ~/.git_template
 [ghi]
-	token = !security find-internet-password -a paulmillr -s github.com -l 'ghi token' -w
+	token = !security find-internet-password -a jhabdas -s github.com -l 'ghi token' -w
