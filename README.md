@@ -56,10 +56,13 @@ Shell (zsh):
 * Install "Source Code Pro" font.
 * Install XCode & its Command Line Tools.
 * Change Terminal.app theme to `terminal/paulmillr.terminal`.
+* Change Terminal.app font to Source Code Pro.
 * Change default shell to ZSH: `chsh -s /bin/zsh`.
 * Insert proper hosts from `etc/hosts` to system’s `/etc/hosts`.
 * Create `~/Development/`
 * Clone this project (dotfiles **RECURSIVELY** `--recursive`) and run `sh bootstrap-new-system.sh`
+  * If script fails while sourcing `osx.sh`, do so from the terminal instead, then comment out the related line in the script and re-run.
+  * Do the same thing for `symlink-dotfiles`, only be sure to source them from the correct location.
 * Download the Yosemite style [Sublime Text icon](https://dribbble.com/shots/1840393-Sublime-Text-Yosemite-Icon?list=searches&tag=sublime_text) (instructions on usage are included in download)
 * Install Sublime packages with Package Control: "Seti UI"
 
