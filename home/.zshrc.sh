@@ -22,6 +22,7 @@ prompt 'paulmillr'
 # = Aliases =
 # ==================================================================
 
+alias -g f2='| head -n 2'
 alias -g f10='| head -n 10'
 alias -g l10='| tail -n 10'
 # Simple clear command.
@@ -89,6 +90,14 @@ function gca() {
   args=$@
   git commit --amend -m "$args"
 }
+function cherry() {
+  args=$@
+  for commit in "$@"; do
+    echo $commit
+    git cherry-pick -n "$commit"
+  done
+}
+alias gcher='cherry'
 
 alias gp='git push'
 
@@ -99,6 +108,7 @@ function gcp() {
 alias gcl='git clone'
 alias gch='git checkout'
 alias gbr='git branch'
+alias gbrcl='git checkout --orphan'
 alias gbrd='git branch -D'
 alias gl='git log --no-merges'
 # own git workflow in hy origin with Tower
@@ -112,6 +122,8 @@ alias bbp='brunch build --production'
 alias bw='brunch watch'
 alias bws='brunch watch --server'
 
+alias nr='npm run'
+
 # Package managers.
 alias bi='bower install'
 alias bis='bower install --save'
@@ -121,12 +133,15 @@ alias nibi='npm install && bower install'
 alias nibir='rm -rf {bower_components,node_modules} && npm install && bower install'
 alias ns='npm search'
 
-alias jk='jekyll serve' # lol jk
-alias serve='python -m SimpleHTTPServer'
+alias jk='jekyll serve --watch' # lol jk
+# alias serve='python -m SimpleHTTPServer'
+alias serve='http-server' # npm install http-server
+alias server='http-server'
 
 # Ruby.
 alias bx='bundle exec'
 alias bex='bundle exec'
+alias migr='bundle exec rake db:migrate'
 
 # Nginx short-cuts.
 alias ngup='sudo nginx'
@@ -309,9 +324,21 @@ function mkv2mp4() {
   done
 }
 
-function mkv2mp4_c() {
+function mkv2mp4_1() {
   for file in "$@"; do
-    ffmpeg -i $file -map 0:0 -map 0:2 -map 0:4 -c copy -c:s mov_text "${file%.*}.m4v"
+    ffmpeg -i $file -map 0:0 -map 0:1 -c copy -c:s mov_text "${file%.*}.m4v"
+  done
+}
+
+function mkv2mp4_2() {
+  for file in "$@"; do
+    ffmpeg -i $file -map 0:0 -map 0:2 -c copy -c:s mov_text "${file%.*}.m4v"
+  done
+}
+
+function mkv2mp4_3() {
+  for file in "$@"; do
+    ffmpeg -i $file -map 0:0 -map 0:3 -c copy -c:s mov_text "${file%.*}.m4v"
   done
 }
 
