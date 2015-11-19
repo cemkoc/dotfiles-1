@@ -53,7 +53,6 @@ Shell (zsh):
 
 ## Building system from scratch (reminder)
 
-* Install "Source Code Pro" font.
 * Install XCode & its Command Line Tools.
 * Change Terminal.app theme to `terminal/paulmillr.terminal`.
 * Change default shell to ZSH: `chsh -s /bin/zsh`.
