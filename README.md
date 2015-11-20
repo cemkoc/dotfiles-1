@@ -19,7 +19,7 @@ Shell (zsh):
 * Auto-completion
 * Syntax highlighting
 * Automatic setting up of terminal tab / window title to current dir
-* `rm` moves file to the OS X trash
+* `rm` moves file to the OS X trash (`brew install trash` if `rm` fails)
 * `z` to allow jumping between directories
 * A bunch of useful functions:
     * `extract archive.tar.bz` — unpack any archive (supports many extensions)
