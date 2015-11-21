@@ -80,6 +80,10 @@ pushd .
 mkdir -p $dev
 cd $dev
 
+# Tweak OS X configuration
+fancy_echo 'Tweaking OS X ...'
+  sudo bash osx.sh
+
 # Add SSH key to GitHub during installation
 pub=$HOME/.ssh/id_rsa.pub
 fancy_echo 'Checking for SSH key, generating one if it does not exist ...'
@@ -99,10 +103,6 @@ if [[ `uname` == 'Darwin' ]]; then
   else
     fancy_echo "Homebrew already installed. Skipping ..."
   fi
-
-  # Tweak OS X configuration
-  fancy_echo 'Tweaking OS X ...'
-    source 'osx.sh'
 
   # Update Homebrew formulas
   fancy_echo "Updating Homebrew formulas ..."
@@ -142,7 +142,7 @@ if [[ `uname` == 'Darwin' ]]; then
 fi
 
 fancy_echo 'Symlinking config files ...'
-  source 'symlink-dotfiles.sh'
+  sudo bash symlink-dotfiles.sh
 
 fancy_echo 'Applying Sublime Text theme and preferences ...'
   st=$(pwd)/sublime/packages
