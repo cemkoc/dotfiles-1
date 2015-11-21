@@ -7,7 +7,7 @@ fancy_echo() {
 
 fancy_echo 'And awaaaaay we go!'
 
-dir="$HOME/Developer"
+dir="$HOME/Developer/dotfiles"
 mkdir -p $dir
 cd $dir
 git clone --recursive git://github.com/jhabdas/dotfiles.git
