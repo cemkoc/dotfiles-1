@@ -18,7 +18,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 
 ## What it sets up
 
-- A `~/Development` directory with dotfiles recursively cloned
+- A `~/Development` directory with dotfiles recursively cloned for easy upkeep
 - [Dropbox] for personal file sharing
 - [Flux] for adjusting your Mac's display color so you can sleep better
 - [Git] for distributed source control management
