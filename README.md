@@ -96,6 +96,7 @@ Where `username` is your GitHub username.
 * Change Terminal.app theme to `terminal/paulmillr.terminal`.
 * Change default shell to ZSH: `chsh -s /bin/zsh`.
 * Insert proper hosts from `etc/hosts` to system’s `/etc/hosts`.
+* Enable tabbing to all controls from Keyboard preferences to allow tabbing in dialogs.
 * Unmap critical shortcut keys for [Sublime Text column selection](https://www.sublimetext.com/forum/viewtopic.php?f=3&t=8775) and up/down code shifting.
 * Download the Yosemite style [Sublime Text icon](https://dribbble.com/shots/1840393-Sublime-Text-Yosemite-Icon?list=searches&tag=sublime_text) (usage instructions included with download)
 * Install Sublime packages with Package Control: "Babel, Babel Snippets, Git, Theme - SoDaReloaded"
