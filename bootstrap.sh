@@ -80,17 +80,6 @@ pushd .
 mkdir -p $dev
 cd $dev
 
-# Configure hostname
-# TODO: Make this optional, prompted
-fancy_echo 'Enter new hostname of the machine (e.g. Joshs-MacBook-Pro)'
-  read hostname
-  fancy_echo "Setting new hostname to $hostname ..."
-  scutil --set HostName "$hostname"
-  compname=$(sudo scutil --get HostName | tr '-' '.')
-  fancy_echo "Setting computer name to $compname"
-  scutil --set ComputerName "$compname"
-  sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$compname"
-
 # Add SSH key to GitHub during installation
 pub=$HOME/.ssh/id_rsa.pub
 fancy_echo 'Checking for SSH key, generating one if it does not exist ...'
