@@ -1,9 +1,6 @@
-fancy_echo() {
-  local fmt="$1"; shift
-  printf "\n$fmt\n" "$@"
-}
+#!/bin/bash
 
-fancy_echo 'And awaaaaay we go!'
+echo 'And awaaaaay we go!'
 
 dir="$HOME/Developer"
 mkdir -p $dir
