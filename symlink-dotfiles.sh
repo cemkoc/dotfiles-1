@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#
+# Symlinks dotfiles in the home directory to $HOME
+# Called by the bootstrapper
+#
+
 dev="$HOME/Developer"
 dotfiles="$dev/dotfiles"
 

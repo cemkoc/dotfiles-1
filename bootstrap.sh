@@ -175,6 +175,6 @@ fancy_echo 'Would you like to view developer API documentation?'
 fancy_echo '(y = open http://devdocs.io, N = don’t open)'
 fancy_echo '[y/N]'
 read give_links
-[[ "$give_links" == 'Y' ]] && open_apps
+[[ "$give_links" == 'y' ]] && open_apps
 
 popd
