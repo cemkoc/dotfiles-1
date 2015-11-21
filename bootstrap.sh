@@ -8,21 +8,16 @@
 # - https://dotfiles.github.io/
 
 # https://github.com/monfresh/laptop/blob/master/mac
-fancy_echo() {
-  local fmt="$1"; shift
-  printf "\n$fmt\n" "$@"
-}
-
 brew_install_or_upgrade() {
   if brew_is_installed "$1"; then
     if brew_is_upgradable "$1"; then
-      fancy_echo "Upgrading %s ..." "$1"
+      echo "Upgrading %s ..." "$1"
       brew upgrade "$@"
     else
-      fancy_echo "Already using the latest version of %s. Skipping ..." "$1"
+      echo "Already using the latest version of %s. Skipping ..." "$1"
     fi
   else
-    fancy_echo "Installing %s ..." "$1"
+    echo "Installing %s ..." "$1"
     brew install "$@"
   fi
 }
@@ -41,7 +36,7 @@ brew_tap_is_installed() {
 
 brew_tap() {
   if ! brew_tap_is_installed "$1"; then
-    fancy_echo "Tapping $1..."
+    echo "Tapping $1..."
     brew tap "$1" 2> /dev/null
   fi
 }
@@ -64,32 +59,24 @@ app_is_installed() {
 
 brew_cask_install() {
   if app_is_installed "$1" || brew_cask_is_installed "$1"; then
-    fancy_echo "$1 is already installed. Skipping..."
+    echo "$1 is already installed. Skipping..."
   else
-    fancy_echo "Installing $1..."
+    echo "Installing $1..."
     brew cask install "$@"
   fi
 }
-
-#
-# MODIFY CONFIGURATION BELOW
-#
 
 dev="$HOME/Developer"
 pushd .
 mkdir -p $dev
 cd $dev
 
-# Tweak OS X configuration
-fancy_echo 'Tweaking OS X. Please provide password ...'
-  sh osx.sh
-
 # Add SSH key to GitHub during installation
 pub=$HOME/.ssh/id_rsa.pub
-fancy_echo 'Checking for SSH key, generating one if it does not exist ...'
+echo 'Checking for SSH key, generating one if it does not exist ...'
   [[ -f $pub ]] || ssh-keygen -t rsa
 
-fancy_echo 'Copying public key to clipboard. Paste it into your Github account ...'
+echo 'Copying public key to clipboard. Paste it into your Github account ...'
   [[ -f $pub ]] && cat $pub | pbcopy
   open 'https://github.com/account/ssh'
 
@@ -98,14 +85,14 @@ if [[ `uname` == 'Darwin' ]]; then
 
   # Install Homebrew
   if ! command -v brew >/dev/null; then
-    fancy_echo "Installing Homebrew ..."
+    echo "Installing Homebrew ..."
       ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   else
-    fancy_echo "Homebrew already installed. Skipping ..."
+    echo "Homebrew already installed. Skipping ..."
   fi
 
   # Update Homebrew formulas
-  fancy_echo "Updating Homebrew formulas ..."
+  echo "Updating Homebrew formulas ..."
     brew update
 
   # Install formulas
@@ -123,7 +110,7 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_tap 'caskroom/versions'
 
   # Install Quick Look Plugins
-  fancy_echo 'Installing Quick Look Plugins ...'
+  echo 'Installing Quick Look Plugins ...'
     brew_cask_install suspicious-package
     brew_cask_install quicklook-json
     brew_cask_install qlmarkdown
@@ -131,7 +118,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install qlcolorcode
 
   # Install additional apps
-  fancy_echo 'Installing OS X apps ...'
+  echo 'Installing OS X apps ...'
     brew_cask_install sublime-text3
     brew_cask_install google-chrome-canary
     brew_cask_install flux
@@ -141,10 +128,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install spotify
 fi
 
-fancy_echo 'Symlinking config files ...'
-  sudo bash symlink-dotfiles.sh
-
-fancy_echo 'Applying Sublime Text theme and preferences ...'
+echo 'Applying Sublime Text theme and preferences ...'
   st=$(pwd)/sublime/packages
   as="$HOME/Library/Application Support/Sublime Text 3/Packages"
   asprefs="$as/User/Preferences.sublime-settings"
@@ -155,12 +139,12 @@ fancy_echo 'Applying Sublime Text theme and preferences ...'
     rm $asprefs
     cp -r $st/pm-themes $as
   else
-    fancy_echo "Install Sublime Text http://www.sublimetext.com"
+    echo "Install Sublime Text http://www.sublimetext.com"
   fi
 
-fancy_echo 'Would you like to view developer API documentation?'
-fancy_echo '(y = open http://devdocs.io, N = don’t open)'
-fancy_echo '[y/N]'
+echo 'Would you like to view developer API documentation?'
+echo '(y = open http://devdocs.io, N = don’t open)'
+echo '[y/N]'
 read give_links
 [[ "$give_links" == 'y' ]] && open_apps
 
