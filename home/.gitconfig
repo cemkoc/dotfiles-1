@@ -57,7 +57,7 @@
   abbrevCommit = true
 
 # URL shorthands
-# gh:paulmillr/dotfiles
+# gh:jhabdas/dotfiles
 [url "git@github.com:"]
   insteadOf = "gh:"
   pushInsteadOf = "gh:"

@@ -4,6 +4,8 @@ curr="$dev/dotfiles"
 
 # Load main files.
 # echo "Load start\t" $(gdate "+%s-%N")
+echo $dev
+echo $curr
 source "$curr/terminal/startup.sh"
 # echo "$curr/terminal/startup.sh"
 source "$curr/terminal/completion.sh"
