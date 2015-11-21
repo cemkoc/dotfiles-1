@@ -18,8 +18,10 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 
 ## What it sets up
 
+- A `~/Development` directory with dotfiles recursively cloned
 - [Dropbox] for personal file sharing
 - [Flux] for adjusting your Mac's display color so you can sleep better
+- [Git] for distributed source control management
 - [Google Chrome Canary] for browser debugging on the edge
 - [Homebrew] for managing operating system libraries
 - [Homebrew Cask] for quickly installing Mac apps from the command line
@@ -31,13 +33,13 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 - [Spotify] because every coder is at least a part-time audiophile
 - [Sublime Text 3] with [SoDaReloaded theme] for coding all the things
 - [Quick Look Plugins] from someone awesome
-- [Zsh] as your shell with the following:
+- [Zsh] as your shell with the following powerful features:
     - **ZERO DEPENDENCIES!**
-    - Auto-completion
-    - Sexy syntax highlighting and translucency
-    - Automatic setting up of terminal tab / window title to current dir
-    - `rm` moves file to the OS X trash
     - `z` to allow [jumping between directories](http://habd.as/installing-using-rupaz/)
+    - `rm` moves file to the OS X trash
+    - Automatic setting up of terminal tab / window title to current dir
+    - Sexy syntax highlighting and translucency
+    - Auto-completion
     - A bunch of useful functions:
         - `extract archive.tar.bz` — unpack any archive (supports many extensions)
         - `ram safari` — show app RAM usage
@@ -114,6 +116,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Bundler]: http://bundler.io/
 [Dropbox]: https://www.dropbox.com/
 [Flux]: https://justgetflux.com/
+[Git]: https://git-scm.com/
 [Google Chrome Canary]: https://www.google.com/chrome/browser/canary.html
 [Homebrew]: http://brew.sh/
 [Homebrew Cask]: http://caskroom.io/
