@@ -143,9 +143,10 @@ echo 'Applying Sublime Text theme and preferences ...'
   fi
 
 echo 'Would you like to view developer API documentation?'
-echo '(y = open http://devdocs.io, N = don’t open)'
+# echo '(y = open http://devdocs.io, N = don’t open)'
 echo '[y/N]'
 read give_links
 [[ "$give_links" == 'y' ]] && open_apps
 
-popd
+echo 'As you were ...'
+  popd
