@@ -130,7 +130,7 @@ fi
 
 echo 'Applying Sublime Text theme and preferences ...'
   st=$(pwd)/sublime/packages
-  as="$HOME/Library/Application Support/Sublime Text 3/Packages"
+  as="$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/"
   asprefs="$as/User/Preferences.sublime-settings"
   if [[ -d "$as" ]]; then
     for theme in $st/Theme*; do
