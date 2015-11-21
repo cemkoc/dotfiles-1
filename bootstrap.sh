@@ -172,7 +172,8 @@ fancy_echo 'Applying Sublime Text theme and preferences ...'
   fi
 
 fancy_echo 'Would you like to view developer API documentation?'
-fancy_echo 'Y/n'
+fancy_echo '(y = open http://devdocs.io, N = don’t open)'
+fancy_echo '[y/N]'
 read give_links
 [[ "$give_links" == 'Y' ]] && open_apps
 
