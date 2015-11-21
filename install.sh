@@ -18,4 +18,4 @@ echo 'Symlinking dotfiles ...'
   sh symlink-dotfiles.sh
 
 echo 'Running bootstrapper ...'
-  sh bootstrap.sh
+  zsh bootstrap.sh
