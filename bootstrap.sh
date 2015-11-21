@@ -5,13 +5,11 @@
 #
 # Read more about Dotfiles:
 # - https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.6b6pzmaxn
-# - https://github.com/monfresh/laptop/blob/master/mac
 # - https://dotfiles.github.io/
 
+# https://github.com/monfresh/laptop/blob/master/mac
 fancy_echo() {
   local fmt="$1"; shift
-
-  # shellcheck disable=SC2059
   printf "\n$fmt\n" "$@"
 }
 

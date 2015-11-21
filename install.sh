@@ -1,5 +1,3 @@
-#!/bin/sh
-
 #
 # Clones repo and repo submodules, then runs the bootstrapper script
 #
