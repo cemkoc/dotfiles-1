@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/bin/bash
 
 #
 # A script for setting up an OS X dev environment
@@ -81,8 +81,8 @@ mkdir -p $dev
 cd $dev
 
 # Tweak OS X configuration
-fancy_echo 'Tweaking OS X ...'
-  sudo bash osx.sh
+fancy_echo 'Tweaking OS X. Please provide password ...'
+  sh osx.sh
 
 # Add SSH key to GitHub during installation
 pub=$HOME/.ssh/id_rsa.pub
