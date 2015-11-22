@@ -5,10 +5,10 @@ curr="$dev/dotfiles"
 # Load main files.
 # echo "Load start\t" $(gdate "+%s-%N")
 source "$curr/terminal/startup.sh"
-# echo "$curr/terminal/startup.sh"
 source "$curr/terminal/completion.sh"
 source "$curr/terminal/highlight.sh"
 source "$curr/terminal/z.sh"
+source "$curr/terminal/nvm.sh"
 # echo "Load end\t" $(gdate "+%s-%N")
 
 autoload -U colors && colors
@@ -25,14 +25,15 @@ prompt 'paulmillr'
 alias -g f2='| head -n 2'
 alias -g f10='| head -n 10'
 alias -g l10='| tail -n 10'
+
 # Simple clear command.
 alias cl='clear'
 
-# Disable sertificate check for wget.
+# Disable certificate check for wget.
 alias wget='wget --no-check-certificate'
 
-# JSHint short-cut.
-alias lint=jshint
+# Use htop in place of top
+alias top='htop'
 
 # Faster NPM for europeans.
 alias npme='npm --registry http://registry.npmjs.eu'
@@ -116,12 +117,6 @@ alias gl='git log --no-merges'
 
 # Dev short-cuts.
 
-# Brunch.
-alias bb='brunch build'
-alias bbp='brunch build --production'
-alias bw='brunch watch'
-alias bws='brunch watch --server'
-
 alias nr='npm run'
 
 # Package managers.
@@ -151,7 +146,7 @@ alias nglog='tail -f /usr/local/var/log/nginx/access.log'
 alias ngerr='tail -f /usr/local/var/log/nginx/error.log'
 
 # Checks whether connection is up.
-alias net="ping ya.ru | grep -E --only-match --color=never '[0-9\.]+ ms'"
+alias net="ping habd.as | grep -E --only-match --color=never '[0-9\.]+ ms'"
 
 # Pretty print json
 alias json='python -m json.tool'
