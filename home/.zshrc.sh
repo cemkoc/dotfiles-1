@@ -26,48 +26,54 @@ alias -g f2='| head -n 2'
 alias -g f10='| head -n 10'
 alias -g l10='| tail -n 10'
 
-# Simple clear command.
-alias cl='clear'
+# Simple clear command
+alias cls='clear'
 
-# Disable certificate check for wget.
+# Disable certificate check for wget
 alias wget='wget --no-check-certificate'
 
 # Use htop in place of top
 alias top='htop'
 
-# Faster NPM for europeans.
+# Faster NPM for europeans
 alias npme='npm --registry http://registry.npmjs.eu'
 
-# Some OS X-only stuff.
+#
+# Some OS X-only stuff
+#
+
 if [[ "$OSTYPE" == darwin* ]]; then
   # Short-cuts for copy-paste.
   alias c='pbcopy'
   alias p='pbpaste'
 
-  # Remove all items safely, to Trash (`brew install trash`).
+  # Remove all items safely, to Trash (`brew install trash`)
   alias rm='trash'
 
-  # Case-insensitive pgrep that outputs full path.
+  # Case-insensitive pgrep that outputs full path
   alias pgrep='pgrep -fli'
 
-  # Lock current session and proceed to the login screen.
+  # Lock current session and proceed to the login screen
   alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
-  # Sniff network info.
+  # Sniff network info
   alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 
-  # Developer tools shortcuts.
+  # Developer tools shortcuts
   alias tower='gittower .'
   alias t='gittower .'
 
-  # Process grep should output full paths to binaries.
+  # Process grep should output full paths to binaries
   alias pgrep='pgrep -fli'
 else
-  # Process grep should output full paths to binaries.
+  # Process grep should output full paths to binaries
   alias pgrep='pgrep -fl'
 fi
 
-# Git short-cuts.
+#
+# Git short-cuts
+#
+
 alias g='git'
 alias ga='git add'
 alias gr='git rm'
@@ -114,12 +120,14 @@ alias gbrd='git branch -D'
 alias gl='git log --no-merges'
 # own git workflow in hy origin with Tower
 
+#
+# Dev short-cuts
+#
 
-# Dev short-cuts.
-
+# NPM
 alias nr='npm run'
 
-# Package managers.
+# Package managers
 alias bi='bower install'
 alias bis='bower install --save'
 alias ni='npm install'
@@ -128,24 +136,24 @@ alias nibi='npm install && bower install'
 alias nibir='rm -rf {bower_components,node_modules} && npm install && bower install'
 alias ns='npm search'
 
-alias jk='jekyll serve --watch' # lol jk
+alias jk='echo "(╯°□°)╯︵ ┻━┻"'
 # alias serve='python -m SimpleHTTPServer'
-alias serve='http-server' # npm install http-server
-alias server='http-server'
+alias serve='live-server' # npm install live-server
+alias server='live-server'
 
-# Ruby.
+# Ruby
 alias bx='bundle exec'
 alias bex='bundle exec'
 alias migr='bundle exec rake db:migrate'
 
-# Nginx short-cuts.
+# Nginx short-cuts
 alias ngup='sudo nginx'
 alias ngdown='sudo nginx -s stop'
 alias ngre='sudo nginx -s stop && sudo nginx'
 alias nglog='tail -f /usr/local/var/log/nginx/access.log'
 alias ngerr='tail -f /usr/local/var/log/nginx/error.log'
 
-# Checks whether connection is up.
+# Checks whether connection is up
 alias net="ping habd.as | grep -E --only-match --color=never '[0-9\.]+ ms'"
 
 # Pretty print json
@@ -168,7 +176,8 @@ alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r 
 # ==================================================================
 # = Functions =
 # ==================================================================
-# Show man page in Preview.app.
+
+# Show man page in Preview.app
 # $ manp cd
 function manp {
   local page
@@ -181,7 +190,7 @@ function manp {
   fi
 }
 
-# Show current Finder directory.
+# Show current Finder directory
 function finder {
   osascript 2>/dev/null <<EOF
     tell application "Finder"
@@ -190,7 +199,7 @@ function finder {
 EOF
 }
 
-# Gets password from OS X Keychain.
+# Gets password from OS X Keychain
 # $ get-pass github
 function get-pass() {
   keychain="$HOME/Library/Keychains/login.keychain"
@@ -198,7 +207,7 @@ function get-pass() {
     awk -F\" '/password:/ {print $2}';
 }
 
-# Opens file in EDITOR.
+# Opens file in EDITOR
 function edit() {
   local dir=$1
   [[ -z "$dir" ]] && dir='.'
@@ -206,7 +215,7 @@ function edit() {
 }
 alias e=edit
 
-# Execute commands for each file in current directory.
+# Execute commands for each file in current directory
 function each() {
   for dir in *; do
     # echo "${dir}:"
@@ -216,7 +225,7 @@ function each() {
   done
 }
 
-# Find files and exec commands at them.
+# Find files and exec commands at them
 # $ find-exec .coffee cat | wc -l
 # # => 9762
 function find-exec() {
@@ -228,7 +237,7 @@ function ff() {
   find . -iname "*${1:-}*"
 }
 
-# Count code lines in some directory.
+# Count code lines in some directory
 # $ loc py js css
 # # => Lines of code for .py: 3781
 # # => Lines of code for .js: 3354
@@ -253,9 +262,9 @@ function loc() {
   echo "${fg[blue]}Total${reset_color} lines of code: ${fg[green]}$total${reset_color}"
 }
 
-# Show how much RAM application uses.
+# Show how much RAM application uses
 # $ ram safari
-# # => safari uses 154.69 MBs of RAM.
+# # => safari uses 154.69 MBs of RAM
 function ram() {
   local sum
   local items
@@ -296,7 +305,7 @@ function stats() {
   sort | uniq -c | sort -r
 }
 
-# Shortcut for searching commands history.
+# Shortcut for searching commands history
 # hist git
 function hist() {
   history 0 | grep $@
@@ -312,7 +321,7 @@ function aes-dec() {
   openssl enc -aes-256-cbc -d -in $1 -out "${1%.*}"
 }
 
-# Converts a.mkv to a.m4v.
+# Converts a.mkv to a.m4v
 function mkv2mp4() {
   for file in "$@"; do
     ffmpeg -i $file -map 0 -c copy "${file%.*}.m4v"
@@ -337,7 +346,7 @@ function mkv2mp4_3() {
   done
 }
 
-# Adds subs from a.srt to a.m4v.
+# Adds subs from a.srt to a.m4v
 function addsubs() {
   for file in "$@"; do
     local raw="${file%.*}"
@@ -361,18 +370,18 @@ function gitio() {
   curl -s -i 'http://git.io' -F "url=$url" -F "code=$code"
 }
 
-# Monitor IO in real-time (open files etc).
+# Monitor IO in real-time (open files etc)
 function openfiles() {
   sudo dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }'
 }
 
-# 4 lulz.
+# 4 lulz
 function compute() {
   while true; do head -n 100 /dev/urandom; sleep 0.1; done \
     | hexdump -C | grep "ca fe"
 }
 
-# Load 8 cores at once.
+# Load 8 cores at once
 function maxcpu() {
   dn=/dev/null
   yes > $dn & yes > $dn & yes > $dn & yes > $dn &
@@ -387,7 +396,7 @@ function retry() {
   retry $@
 }
 
-# Open curr dir in preview.app.
+# Open curr dir in preview.app
 function preview() {
   local item=$1
   [[ -z "$item" ]] && item='.'

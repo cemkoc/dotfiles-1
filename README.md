@@ -73,8 +73,9 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 1. Install Node using `nvm` once terminal restarted<br />
     `nvm i node && nvm alias default node` or, for a specific Node version:<br />
     `nvm i v0.10.32 && nvm use v0.10.32`
+1. Add [Sublime Text CLI support for OS X Terminal](https://www.sublimetext.com/docs/2/osx_command_line.html)
 
-Once complete open your favorite apps installed, like Spectacles and Flux, and start coding!
+Once complete open your favorite apps installed, like Spectacles and Flux, and use `subl` to start coding!
 
 ## Installation
 

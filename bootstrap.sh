@@ -1,11 +1,21 @@
 #!/usr/bin/env zsh
 
 #
-# A script for setting up an OS X dev environment
+# A script for setting up an OS X dev environment.
+# Adapted from Paul Miller.
+# Additionally combines concepts from Mathias, Lars Kappert and others.
 #
-# Read more about Dotfiles:
+# More about these dotfiles:
+# https://github.com/jhabdas/dotfiles/blob/master/README.md
+#
+# Learn more about dotfiles:
 # - https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.6b6pzmaxn
 # - https://dotfiles.github.io/
+#
+
+# ==================================================================
+# = Functions =
+# ==================================================================
 
 # https://github.com/monfresh/laptop/blob/master/mac
 brew_install_or_upgrade() {
@@ -66,6 +76,10 @@ brew_cask_install() {
   fi
 }
 
+# ==================================================================
+# = Configuration =
+# ==================================================================
+
 dev="$HOME/Developer"
 pushd .
 mkdir -p $dev
@@ -96,13 +110,13 @@ if [[ `uname` == 'Darwin' ]]; then
     brew update
 
   # Install formulas
-  brew_install_or_upgrade trash
-  brew_install_or_upgrade htop
-  brew_install_or_upgrade git
-  brew_install_or_upgrade hub
-  brew_install_or_upgrade docker
   brew_install_or_upgrade boot2docker
+  brew_install_or_upgrade docker
+  brew_install_or_upgrade git
+  brew_install_or_upgrade htop
+  brew_install_or_upgrade hub
   brew_install_or_upgrade nvm
+  brew_install_or_upgrade trash
 
   # Install Homebrew Cask
   brew_tap 'caskroom/cask'
@@ -119,13 +133,13 @@ if [[ `uname` == 'Darwin' ]]; then
 
   # Install additional apps
   echo 'Installing OS X apps ...'
-    brew_cask_install sublime-text3
+    brew_cask_install dropbox
     brew_cask_install google-chrome-canary
     brew_cask_install flux
-    brew_cask_install spectacle
     brew_cask_install screenhero
-    brew_cask_install dropbox
+    brew_cask_install spectacle
     brew_cask_install spotify
+    brew_cask_install sublime-text3
 fi
 
 echo 'Applying Sublime Text theme and preferences ...'
