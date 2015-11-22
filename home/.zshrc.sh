@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
 curr="$dev/dotfiles"
-echo "$curr"
 
 # Load main files.
 # echo "Load start\t" $(gdate "+%s-%N")
