@@ -69,6 +69,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 1. Modify `.gitconfig` for your GitHub account
 1. Review `bootstrap.sh` and customize to your liking
 1. Run the single-shot installation script
+1. Follow the `nvm` set-up instructions (`brew uninstall nvm && brew install nvm` if unsure)
 
 ## Installation
 
@@ -100,6 +101,11 @@ Where `username` is your GitHub username.
 * Unmap critical shortcut keys for [Sublime Text column selection](https://www.sublimetext.com/forum/viewtopic.php?f=3&t=8775) and up/down code shifting.
 * Download the Yosemite style [Sublime Text icon](https://dribbble.com/shots/1840393-Sublime-Text-Yosemite-Icon?list=searches&tag=sublime_text) (usage instructions included with download)
 * Install Sublime packages with Package Control: "Babel, Babel Snippets, Git, Theme - SoDaReloaded"
+
+## Todo
+
+- [ ] Automate NVM set-up and remove manual step
+- [ ] Test on other platforms and OS X versions
 
 ## License
 

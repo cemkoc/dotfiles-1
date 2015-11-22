@@ -100,9 +100,9 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_install_or_upgrade htop
   brew_install_or_upgrade git
   brew_install_or_upgrade hub
-  brew_install_or_upgrade nvm
   brew_install_or_upgrade docker
   brew_install_or_upgrade boot2docker
+  brew_install_or_upgrade nvm
 
   # Install Homebrew Cask
   brew_tap 'caskroom/cask'
