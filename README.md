@@ -73,6 +73,11 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 1. Install Node using `nvm` once terminal restarted<br />
     `nvm i node && nvm alias default node` or, for a specific Node version:<br />
     `nvm i v0.10.32 && nvm use v0.10.32`
+1. Set your Git identity:<br />
+    ```
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+    ```
 
 Once complete open your favorite apps installed, like Spectacles and Flux, and start coding!
 
