@@ -28,6 +28,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 - [Homebrew Services] so you can easily stop, start, and restart services
 - [htop] as a replacement for `top`
 - [hub] for interacting with the GitHub API
+- [nvm] for simple Node version management
 - [Screenhero] screen sharing for collaboration in teams
 - [Spectacle] for zero-config window management
 - [Spotify] because every coder is at least a part-time audiophile
@@ -68,8 +69,12 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 1. Fork this repo
 1. Modify `.gitconfig` for your GitHub account
 1. Review `bootstrap.sh` and customize to your liking
-1. Run the single-shot installation script
-1. Follow the `nvm` set-up instructions (`brew uninstall nvm && brew install nvm` if unsure)
+1. Run the [installation](#installation) script
+1. Install Node using `nvm` once terminal restarted<br />
+    `nvm i node && nvm alias default node` or, for a specific Node version:<br />
+    `nvm i v0.10.32 && nvm use v0.10.32`
+
+Once complete open your favorite apps installed, like Spectacles and Flux, and start coding!
 
 ## Installation
 
@@ -104,7 +109,7 @@ Where `username` is your GitHub username.
 
 ## Todo
 
-- [ ] Automate NVM set-up and remove manual step
+- [x] Automate NVM set-up and remove manual step
 - [ ] Test on other platforms and OS X versions
 
 ## License
@@ -130,6 +135,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Homebrew Services]: https://github.com/gapple/homebrew-services
 [htop]: http://hisham.hm/htop/
 [hub]: https://github.com/github/hub
+[nvm]: https://github.com/creationix/nvm
 [Screenhero]: https://screenhero.com/
 [Spectacle]: https://www.spectacleapp.com
 [Spotify]: https://www.spotify.com/
