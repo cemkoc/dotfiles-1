@@ -28,11 +28,13 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 - [Homebrew Services] so you can easily stop, start, and restart services
 - [htop] as a replacement for `top`
 - [hub] for interacting with the GitHub API
+- [irssi] terminal-based IRC chat client
 - [nvm] for simple Node version management
 - [Screenhero] screen sharing for collaboration in teams
 - [Spectacle] for zero-config window management
 - [Spotify] because every coder is at least a part-time audiophile
 - [Sublime Text 3] with [SoDaReloaded theme] for coding all the things
+- [tmux] used to multiplex several virtual consoles
 - [Quick Look Plugins] from someone awesome
 - [Zsh] as your shell with the following powerful features:
     - **ZERO DEPENDENCIES!**
@@ -138,11 +140,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Homebrew Services]: https://github.com/gapple/homebrew-services
 [htop]: http://hisham.hm/htop/
 [hub]: https://github.com/github/hub
+[irssi]: http://www.irssi.org/
 [nvm]: https://github.com/creationix/nvm
 [Screenhero]: https://screenhero.com/
 [Spectacle]: https://www.spectacleapp.com
 [Spotify]: https://www.spotify.com/
 [Sublime Text 3]: http://www.sublimetext.com/3
 [SoDaReloaded theme]: https://packagecontrol.io/packages/Theme%20-%20SoDaReloaded
+[tmux]: https://tmux.github.io/
 [Quick Look Plugins]: http://github.com/sindresorhus/quick-look-plugins
 [Zsh]: http://www.zsh.org/
