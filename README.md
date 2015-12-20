@@ -111,7 +111,7 @@ Where `username` is your GitHub username.
 * Enable tabbing to all controls from Keyboard preferences to allow tabbing in dialogs.
 * Unmap critical shortcut keys for [Sublime Text column selection](https://www.sublimetext.com/forum/viewtopic.php?f=3&t=8775) and up/down code shifting.
 * Download the Yosemite style [Sublime Text icon](https://dribbble.com/shots/1840393-Sublime-Text-Yosemite-Icon?list=searches&tag=sublime_text) (usage instructions included with download)
-* Install Sublime packages with Package Control, such as "Babel, Babel Snippets, Git, DocBlockr, Theme - SoDaReloaded"
+* Install Sublime packages with Package Control, such as "EditorConfig, Babel, Babel Snippets, Git, DocBlockr, Theme - SoDaReloaded"
 
 ## Todo
 
@@ -132,6 +132,7 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [Bundler]: http://bundler.io/
+[Caffeine]: http://lightheadsw.com/caffeine/
 [Dropbox]: https://www.dropbox.com/
 [Flux]: https://justgetflux.com/
 [Git]: https://git-scm.com/
