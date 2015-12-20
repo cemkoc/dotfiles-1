@@ -135,6 +135,7 @@ if [[ `uname` == 'Darwin' ]]; then
 
   # Install additional apps
   echo 'Installing OS X apps ...'
+    brew_cask_install caffeine
     brew_cask_install dropbox
     brew_cask_install google-chrome-canary
     brew_cask_install flux
