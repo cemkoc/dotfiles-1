@@ -111,7 +111,7 @@ Where `username` is your GitHub username.
 * Enable tabbing to all controls from Keyboard preferences to allow tabbing in dialogs.
 * Unmap critical shortcut keys for [Sublime Text column selection](https://www.sublimetext.com/forum/viewtopic.php?f=3&t=8775) and up/down code shifting.
 * Download the Yosemite style [Sublime Text icon](https://dribbble.com/shots/1840393-Sublime-Text-Yosemite-Icon?list=searches&tag=sublime_text) (usage instructions included with download)
-* Install Sublime packages with Package Control, such as "EditorConfig, Babel, Babel Snippets, Git, DocBlockr, Theme - SoDaReloaded"
+* Install Sublime packages with Package Control, such as "EditorConfig, Babel, Babel Snippets, Git, DocBlockr, Sass, Theme - SoDaReloaded"
 
 ## Todo
 
