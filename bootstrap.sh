@@ -138,6 +138,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install caffeine
     brew_cask_install dropbox
     brew_cask_install google-chrome-canary
+    brew_cask_install flow
     brew_cask_install flux
     brew_cask_install screenhero
     brew_cask_install spectacle
