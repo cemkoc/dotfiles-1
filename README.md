@@ -118,6 +118,7 @@ Where `username` is your GitHub username.
 ## Todo
 
 - [x] Automate NVM set-up and remove manual step
+- [ ] Include [Screengif] for animated gif support
 - [ ] Test on other platforms and OS X versions
 
 ## License
@@ -147,6 +148,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [hub]: https://github.com/github/hub
 [irssi]: http://www.irssi.org/
 [nvm]: https://github.com/creationix/nvm
+[Screengif]: https://github.com/dergachev/screengif
 [Screenhero]: https://screenhero.com/
 [Spectacle]: https://www.spectacleapp.com
 [Spotify]: https://www.spotify.com/
