@@ -144,6 +144,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install spectacle
     brew_cask_install spotify
     brew_cask_install sublime-text3
+    brew_cask_install wget
 fi
 
 echo 'Applying Sublime Text theme and preferences ...'

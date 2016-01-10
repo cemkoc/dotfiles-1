@@ -38,6 +38,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 - [Sublime Text 3] with [SoDaReloaded theme] for coding all the things
 - [tmux] used to multiplex several virtual consoles
 - [Quick Look Plugins] from someone awesome
+- [wget] for better scripting pairty with Linux
 - [Zsh] as your shell with the following powerful features:
     - **ZERO DEPENDENCIES!**
     - `z` to allow [jumping between directories](http://habd.as/installing-using-rupaz/)
@@ -154,3 +155,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [tmux]: https://tmux.github.io/
 [Quick Look Plugins]: http://github.com/sindresorhus/quick-look-plugins
 [Zsh]: http://www.zsh.org/
+[wget]: https://www.gnu.org/software/wget/
