@@ -31,6 +31,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 - [htop] as a replacement for `top`
 - [hub] for interacting with the GitHub API
 - [irssi] terminal-based IRC chat client
+- [ngrok] to expose a local server behind a NAT or firewall to the internet
 - [nvm] for simple Node version management
 - [Screenhero] screen sharing for collaboration in teams
 - [Spectacle] for zero-config window management
@@ -147,6 +148,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [htop]: http://hisham.hm/htop/
 [hub]: https://github.com/github/hub
 [irssi]: http://www.irssi.org/
+[ngrok]: https://ngrok.com/
 [nvm]: https://github.com/creationix/nvm
 [Screengif]: https://github.com/dergachev/screengif
 [Screenhero]: https://screenhero.com/

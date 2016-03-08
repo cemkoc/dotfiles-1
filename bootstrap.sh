@@ -116,6 +116,7 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_install_or_upgrade htop
   brew_install_or_upgrade hub
   brew_install_or_upgrade irssi
+  brew_install_or_upgrade ngrok
   brew_install_or_upgrade nvm
   brew_install_or_upgrade tmux
   brew_install_or_upgrade trash
