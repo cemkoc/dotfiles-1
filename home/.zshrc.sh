@@ -65,6 +65,9 @@ if [[ "$OSTYPE" == darwin* ]]; then
 
   # Process grep should output full paths to binaries
   alias pgrep='pgrep -fli'
+
+  # Restart Docker Machine and update environment settings
+  alias redock="docker-machine restart default && docker-machine env default && eval \"$(docker-machine env default)\""
 else
   # Process grep should output full paths to binaries
   alias pgrep='pgrep -fl'
