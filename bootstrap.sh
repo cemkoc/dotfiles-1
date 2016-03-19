@@ -110,6 +110,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew update
 
   # Install formulas
+  brew_install_or_upgrade elinks
   brew_install_or_upgrade docker-machine
   brew_install_or_upgrade docker
   brew_install_or_upgrade git

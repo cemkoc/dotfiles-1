@@ -21,6 +21,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 - A `~/Development` directory with dotfiles recursively cloned for easy upkeep
 - [Caffeine] to keep the monitor on during presentations
 - [Dropbox] for personal file sharing
+- [Elinks] for web browsing from the command line
 - [Flow] for static typechecking
 - [Flux] for adjusting your Mac's display color so you can sleep better
 - [Git] for distributed source control management
@@ -138,6 +139,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Bundler]: http://bundler.io/
 [Caffeine]: http://lightheadsw.com/caffeine/
 [Dropbox]: https://www.dropbox.com/
+[Elinks]: http://elinks.or.cz/
 [Flow]: http://flowtype.org/
 [Flux]: https://justgetflux.com/
 [Git]: https://git-scm.com/
