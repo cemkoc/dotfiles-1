@@ -25,6 +25,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 - [Flow] for static typechecking
 - [Flux] for adjusting your Mac's display color so you can sleep better
 - [Git] for distributed source control management
+- [Gitify] for GitHub Notifications on your menu bar
 - [Google Chrome Canary] for browser debugging on the edge
 - [Homebrew] for managing operating system libraries
 - [Homebrew Cask] for quickly installing Mac apps from the command line
