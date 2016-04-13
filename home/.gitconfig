@@ -42,7 +42,7 @@
   ui = true
 
 [core]
-  editor = subl
+	editor = vim
   excludesfile = ~/.gitignore
   #pager = diff-highlight | less -r
 
@@ -77,3 +77,5 @@
 	token = !security find-internet-password -a jhabdas -s github.com -l 'ghi token' -w
 [pull]
 	rebase = true
+[rerere]
+	enabled = true

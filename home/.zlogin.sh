@@ -31,3 +31,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Add NVM support
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+### Add RVM support for Ruby
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

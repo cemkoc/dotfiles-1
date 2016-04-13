@@ -20,6 +20,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 
 - A `~/Development` directory with dotfiles recursively cloned for easy upkeep
 - [Caffeine] to keep the monitor on during presentations
+- [Dlite] for the simplest way to use Docker on OS X (Yosemite and upwards)
 - [Dropbox] for personal file sharing
 - [Elinks] for web browsing from the command line
 - [Flow] for static typechecking
@@ -60,6 +61,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
         - `aes-enc`, `aes-dec` - safely encrypt files.
     - Neat git extras:
         - Opinionated `git log`, `git graph`
+        - Enables `rerere` for easier rebasing
         - `gcp` for fast `git commit -m ... && git push`
         - `git pr <pull-req> [origin]` for fetching pull request branches
         - `git cleanup` — clean up merged git branches. Very useful if
@@ -83,9 +85,6 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
     `nvm i v0.10.32 && nvm use v0.10.32`
 1. If necessary, set your `--global` [username](https://help.github.com/articles/setting-your-username-in-git/) and [email](https://help.github.com/articles/setting-your-email-in-git/) in Git.
 1. Add [Sublime Text CLI support for OS X Terminal](https://www.sublimetext.com/docs/2/osx_command_line.html)
-1. If you'll be using the installed Docker package be sure to [download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads).
-
-Once complete open your favorite apps installed, like Spectacles and Flux, and use `subl` to start coding!
 
 ## Installation
 
@@ -140,6 +139,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [Bundler]: http://bundler.io/
 [Caffeine]: http://lightheadsw.com/caffeine/
 [Dropbox]: https://www.dropbox.com/
+[Dlite]: https://github.com/nlf/dlite
 [Elinks]: http://elinks.or.cz/
 [Flow]: http://flowtype.org/
 [Flux]: https://justgetflux.com/
