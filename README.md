@@ -37,6 +37,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 - [ngrok] to expose a local server behind a NAT or firewall to the internet
 - [nvm] for simple Node version management
 - [Screenhero] screen sharing for collaboration in teams
+- [Sequel Pro] for MySQL database management
 - [Spectacle] for zero-config window management
 - [Spotify] because every coder is at least a part-time audiophile
 - [Sublime Text 3] with [SoDaReloaded theme] for coding all the things
@@ -155,6 +156,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [nvm]: https://github.com/creationix/nvm
 [Screengif]: https://github.com/dergachev/screengif
 [Screenhero]: https://screenhero.com/
+[Sequel Pro]: http://www.sequelpro.com/
 [Spectacle]: https://www.spectacleapp.com
 [Spotify]: https://www.spotify.com/
 [Sublime Text 3]: http://www.sublimetext.com/3

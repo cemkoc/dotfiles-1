@@ -9,6 +9,7 @@ source "$curr/terminal/completion.sh"
 source "$curr/terminal/highlight.sh"
 source "$curr/terminal/z.sh"
 source "$curr/terminal/nvm.sh"
+source "$curr/terminal/rvm.sh"
 # echo "Load end\t" $(gdate "+%s-%N")
 
 autoload -U colors && colors

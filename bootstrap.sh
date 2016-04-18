@@ -144,6 +144,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install flow
     brew_cask_install flux
     brew_cask_install screenhero
+    brew_cask_install sequel-pro
     brew_cask_install spectacle
     brew_cask_install spotify
     brew_cask_install sublime-text3
