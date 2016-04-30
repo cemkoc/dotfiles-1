@@ -1,7 +1,7 @@
 echo 'And awaaaaay we go!'
 
 echo 'VIM install...'
-  sh vm_install.sh
+  sh vim_install.sh
 
 echo 'Running bootstrapper ...'
   sh bootstrap.sh
