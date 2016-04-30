@@ -92,7 +92,7 @@ It can be run multiple times on the same machine safely. It installs, upgrades, 
 When ready run the installer, replacing `username` with your own once repo is forked customized:
 
 ```
-curl --silent https://raw.githubusercontent.com/username/dotfiles/master/install.sh | sh
+curl --silent https://raw.githubusercontent.com/bsuper/dotfiles/master/install.sh | sh
 ```
 
 Where `username` is your GitHub username.
