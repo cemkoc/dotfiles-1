@@ -9,7 +9,7 @@ echo 'And awaaaaay we go!'
 dir="$HOME/Developer"
 mkdir -p $dir
 cd $dir
-git clone --recursive git://github.com/jhabdas/dotfiles.git dotfiles && cd $_
+git clone --recursive git://github.com/bsuper/dotfiles.git dotfiles && cd $_
 
 #echo 'Tweaking OS X. Please provide password ...'
 #  sh osx.sh
