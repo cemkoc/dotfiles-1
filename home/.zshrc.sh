@@ -37,7 +37,7 @@ alias wget='wget --no-check-certificate'
 alias top='htop'
 
 # Faster NPM for europeans
-alias npme='npm --registry http://registry.npmjs.eu'
+# alias npme='npm --registry http://registry.npmjs.eu'
 
 #
 # Some OS X-only stuff
@@ -68,7 +68,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
   alias pgrep='pgrep -fli'
 
   # Restart Docker Machine and update environment settings
-  alias redock="docker-machine restart default && docker-machine env default && eval \"$(docker-machine env default)\""
+  # alias redock="docker-machine restart default && docker-machine env default && eval \"$(docker-machine env default)\""
 else
   # Process grep should output full paths to binaries
   alias pgrep='pgrep -fl'
@@ -129,16 +129,16 @@ alias gl='git log --no-merges'
 #
 
 # NPM
-alias nr='npm run'
+# alias nr='npm run'
 
 # Package managers
-alias bi='bower install'
-alias bis='bower install --save'
-alias ni='npm install'
-alias nis='npm install --save'
-alias nibi='npm install && bower install'
-alias nibir='rm -rf {bower_components,node_modules} && npm install && bower install'
-alias ns='npm search'
+# alias bi='bower install'
+# alias bis='bower install --save'
+# alias ni='npm install'
+# alias nis='npm install --save'
+# alias nibi='npm install && bower install'
+# alias nibir='rm -rf {bower_components,node_modules} && npm install && bower install'
+# alias ns='npm search'
 
 alias jk='echo "(╯°□°)╯︵ ┻━┻"'
 # alias serve='python -m SimpleHTTPServer'
