@@ -110,15 +110,10 @@ if [[ `uname` == 'Darwin' ]]; then
     brew update
 
   # Install formulas
-  brew_install_or_upgrade elinks
   brew_install_or_upgrade dlite
   brew_install_or_upgrade docker
   brew_install_or_upgrade git
   brew_install_or_upgrade htop
-  brew_install_or_upgrade hub
-  brew_install_or_upgrade irssi
-  brew_install_or_upgrade ngrok
-  brew_install_or_upgrade nvm
   brew_install_or_upgrade tmux
   brew_install_or_upgrade trash
 
@@ -137,39 +132,14 @@ if [[ `uname` == 'Darwin' ]]; then
 
   # Install additional apps
   echo 'Installing OS X apps ...'
-    brew_cask_install caffeine
-    brew_cask_install dropbox
-    brew_cask_install gitify
-    brew_cask_install google-chrome-canary
-    brew_cask_install flow
+
     brew_cask_install flux
-    brew_cask_install screenhero
-    brew_cask_install sequel-pro
-    brew_cask_install spectacle
+    brew_cask_install jadengeller-helium
+    brew_cask_install numi
+    brew_cask_install polymail
     brew_cask_install spotify
-    brew_cask_install sublime-text3
     brew_cask_install wget
 fi
-
-echo 'Applying Sublime Text theme and preferences ...'
-  st=$(pwd)/sublime/packages
-  as="$HOME/Library/Application\ Support/Sublime\ Text\ 3/Packages/"
-  asprefs="$as/User/Preferences.sublime-settings"
-  if [[ -d "$as" ]]; then
-    for theme in $st/Theme*; do
-      cp -r $theme $as
-    done
-    rm $asprefs
-    cp -r $st/pm-themes $as
-  else
-    echo "Install Sublime Text http://www.sublimetext.com"
-  fi
-
-echo 'Would you like to view developer API documentation?'
-echo '(y = open http://devdocs.io, N = don’t open)'
-echo '[y/N]'
-read give_links
-[[ "$give_links" == 'y' ]] && open_apps
 
 echo 'Dotfile installation completed. Restart your terminal for the changes to take effect.'
   popd

@@ -1,9 +1,9 @@
 [user]
-	name = Josh Habdas
-	email = jhabdas@gmail.com
+	name = Brian Su
+	email = briansuaccs+github@gmail.com
 
 [github]
-  user = jhabdas
+  user = bsuper
 
 [alias]
   br = branch
@@ -57,7 +57,7 @@
   abbrevCommit = true
 
 # URL shorthands
-# gh:jhabdas/dotfiles
+# gh:bsuper/dotfiles
 [url "git@github.com:"]
   insteadOf = "gh:"
   pushInsteadOf = "gh:"
@@ -74,7 +74,7 @@
 [init]
 	templatedir = ~/.git_template
 [ghi]
-	token = !security find-internet-password -a jhabdas -s github.com -l 'ghi token' -w
+	token = !security find-internet-password -a bsuper -s github.com -l 'ghi token' -w
 [pull]
 	rebase = true
 [rerere]

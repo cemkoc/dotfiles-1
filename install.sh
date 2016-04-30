@@ -11,8 +11,8 @@ mkdir -p $dir
 cd $dir
 git clone --recursive git://github.com/jhabdas/dotfiles.git dotfiles && cd $_
 
-echo 'Tweaking OS X. Please provide password ...'
-  sh osx.sh
+#echo 'Tweaking OS X. Please provide password ...'
+#  sh osx.sh
 
 echo 'Symlinking dotfiles ...'
   sh symlink-dotfiles.sh
