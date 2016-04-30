@@ -143,5 +143,8 @@ pip install virtualenv
 # Iterm2 solarized dark
 curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors > ~/Downloads/SolarizedDark.itermcolors
 
+# Set hostname
+sudo scutil –-set HostName endeavor
+
 echo 'Completed bootstrap.sh'
   popd
