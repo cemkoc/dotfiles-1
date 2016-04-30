@@ -6,7 +6,7 @@
 # Additionally combines concepts from Mathias, Lars Kappert and others.
 #
 # More about these dotfiles:
-# https://github.com/jhabdas/dotfiles/blob/master/README.md
+# https://github.com/bsuper/dotfiles/blob/master/README.md
 #
 # Learn more about dotfiles:
 # - https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.6b6pzmaxn
@@ -110,8 +110,6 @@ if [[ `uname` == 'Darwin' ]]; then
     brew update
 
   # Install formulas
-  brew_install_or_upgrade dlite
-  brew_install_or_upgrade docker
   brew_install_or_upgrade git
   brew_install_or_upgrade htop
   brew_install_or_upgrade tmux
@@ -122,24 +120,22 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_install_or_upgrade 'brew-cask'
   brew_tap 'caskroom/versions'
 
-  # Install Quick Look Plugins
-  echo 'Installing Quick Look Plugins ...'
-    brew_cask_install suspicious-package
-    brew_cask_install quicklook-json
-    brew_cask_install qlmarkdown
-    brew_cask_install qlstephen
-    brew_cask_install qlcolorcode
-
   # Install additional apps
   echo 'Installing OS X apps ...'
 
+    brew_cask_install atom
     brew_cask_install flux
     brew_cask_install jadengeller-helium
+    brew_cask_install iterm2
     brew_cask_install numi
     brew_cask_install polymail
     brew_cask_install spotify
+    brew cask install sublime-text3
     brew_cask_install wget
 fi
 
-echo 'Dotfile installation completed. Restart your terminal for the changes to take effect.'
+# Iterm2 solarized dark
+curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors > ~/Downloads/SolarizedDark.itermcolors
+
+echo 'Completed bootstrap.sh'
   popd
