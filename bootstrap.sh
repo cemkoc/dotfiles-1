@@ -80,10 +80,10 @@ brew_cask_install() {
 # = Configuration =
 # ==================================================================
 
-dev="$HOME/Developer"
-pushd .
-mkdir -p $dev
-cd $dev
+# dev="$HOME/Developer"
+# pushd .
+# mkdir -p $dev
+# cd $dev
 
 # Add SSH key to GitHub during installation
 pub=$HOME/.ssh/id_rsa.pub
@@ -112,6 +112,7 @@ if [[ `uname` == 'Darwin' ]]; then
   # Install formulas
   brew_install_or_upgrade git
   brew_install_or_upgrade htop
+  brew_install_or_upgrade python
   brew_install_or_upgrade tmux
   brew_install_or_upgrade trash
 
@@ -125,6 +126,7 @@ if [[ `uname` == 'Darwin' ]]; then
 
     brew_cask_install atom
     brew_cask_install flux
+    brew_cask_install google-chrome
     brew_cask_install jadengeller-helium
     brew_cask_install iterm2
     brew_cask_install numi
@@ -133,6 +135,10 @@ if [[ `uname` == 'Darwin' ]]; then
     brew cask install sublime-text3
     brew_cask_install wget
 fi
+
+# Virtualenv
+pip install --upgrade pip
+pip install virtualenv
 
 # Iterm2 solarized dark
 curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors > ~/Downloads/SolarizedDark.itermcolors
