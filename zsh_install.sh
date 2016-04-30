@@ -13,7 +13,7 @@ cd fonts
 ./install.sh
 
 cd ~/Downloads/dotfiles
-mv ~/Downloads/dotfiles/prompt_agnoster_setup ~/.zprezto/modules/prompts/functions
+mv ~/Downloads/dotfiles/prompt_agnoster_setup ~/.zprezto/modules/prompt/functions/prompt_agnoster_setup
 
 cd ~/Downloads
 mkdir -p ~/.sources/
