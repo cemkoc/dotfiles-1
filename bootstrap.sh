@@ -125,6 +125,7 @@ if [[ `uname` == 'Darwin' ]]; then
   echo 'Installing OS X apps ...'
 
     brew_cask_install atom
+    brew_cask_install controlplane
     brew_cask_install flux
     brew_cask_install google-chrome
     brew_cask_install jadengeller-helium
@@ -142,6 +143,9 @@ pip install virtualenv
 
 # Iterm2 solarized dark
 curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors > ~/Downloads/SolarizedDark.itermcolors
+
+# ublock origin
+open https://www.ublock.org/newdl/safari/0.9.5.2
 
 # Set hostname
 sudo scutil –-set HostName endeavor
