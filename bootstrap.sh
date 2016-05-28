@@ -110,6 +110,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew update
 
   # Install formulas
+  brew_install_or_upgrade cmake
   brew_install_or_upgrade ctags
   brew_install_or_upgrade git
   brew_install_or_upgrade htop
