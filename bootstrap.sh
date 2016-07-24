@@ -116,7 +116,7 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_install_or_upgrade htop
   brew_install_or_upgrade python
   brew linkapps python
-  brew install_or_upgrade the_silver_searcher
+  brew_install_or_upgrade the_silver_searcher
   brew_install_or_upgrade tmux
   brew_install_or_upgrade trash
   brew_install_or_upgrade tree
