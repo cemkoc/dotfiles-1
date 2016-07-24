@@ -115,9 +115,11 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_install_or_upgrade git
   brew_install_or_upgrade htop
   brew_install_or_upgrade python
+  brew linkapps python
   brew install_or_upgrade the_silver_searcher
   brew_install_or_upgrade tmux
   brew_install_or_upgrade trash
+  brew_install_or_upgrade tree
   brew_install_or_upgrade vim
 
   # Install Homebrew Cask
@@ -134,6 +136,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install google-chrome
     brew_cask_install jadengeller-helium
     brew_cask_install iterm2
+    brew_cask_install microsoft-office
     brew_cask_install numi
     brew_cask_install polymail
     brew_cask_install spotify
@@ -152,7 +155,7 @@ curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-color
 open https://www.ublock.org/newdl/safari/0.9.5.2
 
 # Set hostname
-sudo scutil –-set HostName endeavor
+sudo scutil --set HostName endeavor
 
 echo 'Completed bootstrap.sh'
   popd

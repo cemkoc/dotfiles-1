@@ -1,9 +1,0 @@
-[submodule "terminal/completion"]
-	path = terminal/completion
-	url = https://github.com/zsh-users/zsh-completions.git
-[submodule "terminal/highlight"]
-	path = terminal/highlight
-	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
-[submodule "sublime/Packages/Theme - SoDaReloaded"]
-	path = sublime/Packages/Theme - SoDaReloaded
-	url = git@github.com:Miw0/SoDaReloaded-Theme.git

@@ -1,21 +1,14 @@
-#!/bin/bash
-
-#
-# Clones repo and repo submodules, then runs the bootstrapper script
-#
-
 echo 'And awaaaaay we go!'
 
-dir="$HOME/Developer"
-mkdir -p $dir
-cd $dir
-git clone --recursive git://github.com/bsuper/dotfiles.git dotfiles && cd $_
+cd ..
+mv dotfiles ~/Downloads
+cd ~/Downloads/dotfiles
 
-#echo 'Tweaking OS X. Please provide password ...'
-#  sh osx.sh
+echo 'VIM install...'
+  mv vimrc ~/.vimrc
 
-echo 'Symlinking dotfiles ...'
-  sh symlink-dotfiles.sh
+echo "Running ZSH installation..."
+  zsh zsh_install.sh
 
 echo 'Running bootstrapper ...'
   sh bootstrap.sh
