@@ -5,6 +5,8 @@ mv dotfiles ~/Downloads
 cd ~/Downloads/dotfiles
 
 echo 'VIM install...'
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   mv vimrc ~/.vimrc
 
 echo "Running ZSH installation..."
