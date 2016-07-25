@@ -136,6 +136,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install google-chrome
     brew_cask_install jadengeller-helium
     brew_cask_install iterm2
+    brew_cask_install macclean
     brew_cask_install microsoft-office
     brew_cask_install numi
     brew_cask_install polymail
