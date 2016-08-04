@@ -141,7 +141,7 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install numi
     brew_cask_install polymail
     brew_cask_install spotify
-    brew cask install sublime-text3
+    brew cask install sublime-text
     brew_cask_install wget
 fi
 
