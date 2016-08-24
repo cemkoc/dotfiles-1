@@ -149,7 +149,7 @@ fi
 
 # Virtualenv
 pip install --upgrade pip
-pip install virtualenv
+pip install virtualenv numpy pandas seaborn jupyter scipy sklearn yapf xgboost matplotlib 
 
 # Iterm2 solarized dark
 curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors > ~/Downloads/SolarizedDark.itermcolors
