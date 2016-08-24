@@ -131,6 +131,7 @@ if [[ `uname` == 'Darwin' ]]; then
   echo 'Installing OS X apps ...'
 
     brew_cask_install atom
+    brew_cask_install caffeine
     brew_cask_install controlplane
     brew_cask_install flux
     brew_cask_install google-chrome
@@ -141,7 +142,8 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install numi
     brew_cask_install polymail
     brew_cask_install spotify
-    brew cask install sublime-text
+    brew_cask_install sublime-text
+    brew_cask_install virtualbox
     brew_cask_install wget
 fi
 
