@@ -157,8 +157,5 @@ curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-color
 # ublock origin
 open https://www.ublock.org/newdl/safari/0.9.5.2
 
-# Set hostname
-sudo scutil --set HostName endeavor
-
 echo 'Completed bootstrap.sh'
   popd
