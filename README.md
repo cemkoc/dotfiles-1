@@ -4,6 +4,11 @@ Colourful & robust OS X and Linux configuration files and utilities for web deve
 
 It can be run multiple times on the same machine safely. It installs, upgrades, or skips packages based on what is already installed on the machine.
 
+### Features
+
+1. `zsh` instead of `bash`. The main benefit is path autocompletion.
+2. Uses `brew cask` to install many apps. This allows third party apps to be placed in a single folder separate from the main applications folder. A symlink is used add itself to the `/Applications` folder.
+
 ### Installation
 
 Note: Since this script is poorly written, files will be created, modified, and deleted in `~/Downloads`. But, you can clone this repo anywhere and this repo will automatically transfer its contents to `~/Downloads` before anything else happens.
