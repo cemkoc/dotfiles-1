@@ -123,9 +123,9 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_install_or_upgrade vim
 
   # Install Homebrew Cask
-  brew_tap 'caskroom/cask'
-  brew_install_or_upgrade 'brew-cask'
-  brew_tap 'caskroom/versions'
+  # brew_tap 'caskroom/cask'
+  # brew_install_or_upgrade 'brew-cask'
+  # brew_tap 'caskroom/versions'
 
   # Install additional apps
   echo 'Installing OS X apps ...'
