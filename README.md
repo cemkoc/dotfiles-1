@@ -25,7 +25,7 @@ Now, we have to install the VIM plugins that I use. I use a VIM plugin manager c
 vim
 
 # Within VIM
-:source %
+:source ~/.vim/autoload/plug.vim
 :PlugInstall
 :q
 # :q exits VIM
