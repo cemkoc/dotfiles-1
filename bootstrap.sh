@@ -158,4 +158,3 @@ pip install virtualenv numpy pandas seaborn jupyter scipy sklearn yapf matplotli
 open https://www.ublock.org/newdl/safari/0.9.5.2
 
 echo 'Completed bootstrap.sh'
-  popd
