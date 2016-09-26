@@ -121,6 +121,7 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_install_or_upgrade trash
   brew_install_or_upgrade tree
   brew_install_or_upgrade vim
+  brew_install_or_upgrade wget
 
   # Install additional apps
   echo 'Installing OS X apps ...'
