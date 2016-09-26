@@ -141,7 +141,6 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install sublime-text
     brew_cask_install virtualbox
     brew_cask_install virtualbox-extension-pack
-    brew_cask_install wget
 fi
 
 # Virtualenv
