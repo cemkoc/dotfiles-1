@@ -152,7 +152,7 @@ pip install --upgrade pip
 pip install virtualenv numpy pandas seaborn jupyter scipy sklearn yapf matplotlib ipywidgets
 
 # Iterm2 solarized dark
-curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors > ~/Downloads/SolarizedDark.itermcolors
+# curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors > ~/Downloads/SolarizedDark.itermcolors
 
 # ublock origin
 open https://www.ublock.org/newdl/safari/0.9.5.2
