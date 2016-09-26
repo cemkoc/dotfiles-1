@@ -122,11 +122,6 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_install_or_upgrade tree
   brew_install_or_upgrade vim
 
-  # Install Homebrew Cask
-  # brew_tap 'caskroom/cask'
-  # brew_install_or_upgrade 'brew-cask'
-  # brew_tap 'caskroom/versions'
-
   # Install additional apps
   echo 'Installing OS X apps ...'
 
@@ -151,9 +146,6 @@ fi
 # Virtualenv
 pip install --upgrade pip
 pip install virtualenv numpy pandas seaborn jupyter scipy sklearn yapf matplotlib ipywidgets
-
-# Iterm2 solarized dark
-# curl https://raw.githubusercontent.com/altercation/solarized/master/iterm2-colors-solarized/Solarized%20Dark.itermcolors > ~/Downloads/SolarizedDark.itermcolors
 
 # ublock origin
 open https://www.ublock.org/newdl/safari/0.9.5.2
