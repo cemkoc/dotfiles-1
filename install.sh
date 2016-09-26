@@ -14,3 +14,5 @@ echo "Running ZSH installation..."
 
 echo 'Running bootstrapper ...'
   sh bootstrap.sh
+
+echo "You're all clear to start working!"
