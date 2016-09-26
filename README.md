@@ -34,3 +34,4 @@ vim
 mv ~/.vim/plugged/vim-colors-solarized/colors ~/.vim
 ```
 
+Finally, you'll notice that there's weird symbols when using VIM. This is because the default font in iTerm is not compatible. To make it compatible, go to iTerm's preferences and changed the font via Profile > Text to a font that has Powerline in its name.
