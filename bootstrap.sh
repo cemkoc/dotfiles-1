@@ -143,6 +143,10 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install virtualbox-extension-pack
 fi
 
+# Stupid homebrew update breaks traditional method of installing python.
+# https://github.com/Homebrew/homebrew-core/issues/15746
+export PATH="$(brew --prefix)/opt/python/libexec/bin:$PATH"
+
 # Virtualenv
 pip install --upgrade pip
 pip install virtualenv numpy pandas seaborn jupyter scipy sklearn yapf matplotlib ipywidgets
