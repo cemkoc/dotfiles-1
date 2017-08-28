@@ -52,6 +52,7 @@ set mouse=a
 set clipboard=unnamed
 set noesckeys
 set nocompatible
+imap jj <Esc> " Map escape key to jj
 " }}}
 
 " Switch Window CMDs {{{
