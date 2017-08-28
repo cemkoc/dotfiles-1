@@ -146,6 +146,7 @@ fi
 # Stupid homebrew update breaks traditional method of installing python.
 # https://github.com/Homebrew/homebrew-core/issues/15746
 export PATH="$(brew --prefix)/opt/python/libexec/bin:$PATH"
+echo 'export PATH="$(brew --prefix)/opt/python/libexec/bin:$PATH"' >> .zshrc
 
 # Virtualenv
 pip install --upgrade pip
