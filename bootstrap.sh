@@ -131,22 +131,16 @@ if [[ `uname` == 'Darwin' ]]; then
     brew_cask_install controlplane
     brew_cask_install flux
     brew_cask_install google-chrome
-    brew_cask_install jadengeller-helium
     brew_cask_install iterm2
-    brew_cask_install macclean
-    brew_cask_install microsoft-office
     brew_cask_install numi
-    brew_cask_install polymail
     brew_cask_install spotify
     brew_cask_install sublime-text
-    brew_cask_install virtualbox
-    brew_cask_install virtualbox-extension-pack
 fi
 
 # Stupid homebrew update breaks traditional method of installing python.
 # https://github.com/Homebrew/homebrew-core/issues/15746
 export PATH="$(brew --prefix)/opt/python/libexec/bin:$PATH"
-echo 'export PATH="$(brew --prefix)/opt/python/libexec/bin:$PATH"' >> .zshrc
+echo 'export PATH="$(brew --prefix)/opt/python/libexec/bin:$PATH"' >> ~/.zshrc
 
 # Virtualenv
 pip install --upgrade pip
