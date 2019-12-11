@@ -114,6 +114,7 @@ if [[ `uname` == 'Darwin' ]]; then
   brew_install_or_upgrade ctags
   brew_install_or_upgrade git
   brew_install_or_upgrade htop
+  brew_install_or_upgrade python
   brew_install_or_upgrade python@2
   brew linkapps python
   brew_install_or_upgrade the_silver_searcher
@@ -125,14 +126,14 @@ if [[ `uname` == 'Darwin' ]]; then
 
   # Install additional apps
   echo 'Installing OS X apps ...'
-    brew_cask_install adobe-creative-cloud
-    brew_cask_install caffeine
+    # brew_cask_install adobe-creative-cloud
+    # brew_cask_install caffeine
     brew_cask_install controlplane
-    brew_cask_install flux
+    # brew_cask_install flux
     brew_cask_install google-chrome
     brew_cask_install iterm2
     brew_cask_install numi
-    brew_cask_install spotify
+    # brew_cask_install spotify
     brew_cask_install sublime-text
 fi
 
