@@ -19,9 +19,9 @@ DOTFILES_EXTRA_DIR="$HOME/.extra"
 
 # Bunch of symlinks
 ln -sfv "$DOTFILES_DIR/.bash_profile" ~
-ln -sfv "$DOTFILES_DIR/.aliases" ~
-ln -sfv "$DOTFILES_DIR/.functions" ~
-ln -sfv "$DOTFILES_DIR/.path" ~
+ln -sfv "$DOTFILES_DIR/system/.aliases" ~
+ln -sfv "$DOTFILES_DIR/system/.functions" ~
+ln -sfv "$DOTFILES_DIR/system/.path" ~
 # [unused] ln -sfv "$DOTFILES_DIR/runcom/.inputrc" ~
 # [unused] ln -sfv "$DOTFILES_DIR/runcom/.gemrc" ~
 # [unused] ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
